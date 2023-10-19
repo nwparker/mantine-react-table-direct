@@ -1,0 +1,7 @@
+import { type ActionIconProps } from '@mantine/core';
+import { type HTMLPropsRef, type MRT_TableInstance } from '../types';
+interface Props<TData extends Record<string, any> = {}> extends ActionIconProps, HTMLPropsRef<HTMLButtonElement> {
+    table: MRT_TableInstance<TData>;
+}
+export declare const MRT_ToggleFullScreenButton: <TData extends Record<string, any> = {}>({ table: { getState, options: { icons: { IconMinimize, IconMaximize }, localization: { toggleFullScreen }, }, setIsFullScreen, }, title, ...rest }: Props<TData>) => import("react/jsx-runtime").JSX.Element;
+export {};

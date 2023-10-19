@@ -1,0 +1,50 @@
+
+> mantine-react-table@2.0.0-alpha.2 build /Users/nwparker/projects/mantine-react-table/packages/mantine-react-table
+> pnpm lib:build
+
+
+> mantine-react-table@2.0.0-alpha.2 lib:build /Users/nwparker/projects/mantine-react-table/packages/mantine-react-table
+> rm -rf dist && pnpm build-no-locales && pnpm build-locales
+
+
+> mantine-react-table@2.0.0-alpha.2 build-no-locales /Users/nwparker/projects/mantine-react-table/packages/mantine-react-table
+> pnpm lib:build-no-locales
+
+
+> mantine-react-table@2.0.0-alpha.2 lib:build-no-locales /Users/nwparker/projects/mantine-react-table/packages/mantine-react-table
+> rm -rf dist && rollup -c rollup.config.mjs && size-limit
+
+[36m
+[1m./src/index.ts[22m → [1m./dist/cjs/index.js, ./dist/esm/mantine-react-table.esm.js[22m...[39m
+[32mcreated [1m./dist/cjs/index.js, ./dist/esm/mantine-react-table.esm.js[22m in [1m4.7s[22m[39m
+[36m
+[1m./dist/esm/types/index.d.ts[22m → [1m./dist/index.d.ts[22m...[39m
+copied:
+  dist/cjs/index.css → styles.css [R]
+Deleted files and folders: 2
+/Users/nwparker/projects/mantine-react-table/packages/mantine-react-table/dist/cjs/index.css
+/Users/nwparker/projects/mantine-react-table/packages/mantine-react-table/dist/esm/mantine-react-table.esm.css
+[32mcreated [1m./dist/index.d.ts[22m in [1m162ms[22m[39m
+- Adding to empty esbuild project
+✔ Adding to empty esbuild project
+  
+  dist/cjs/index.js
+  Size limit: 58 kB
+  Size:       53.77 kB with all dependencies, minified and gzipped
+  
+  dist/esm/mantine-react-table.esm.js
+  Size limit: 56 kB
+  Size:       50.3 kB with all dependencies, minified and gzipped
+  
+
+> mantine-react-table@2.0.0-alpha.2 build-locales /Users/nwparker/projects/mantine-react-table/packages/mantine-react-table
+> pnpm lib:build-locales
+
+
+> mantine-react-table@2.0.0-alpha.2 lib:build-locales /Users/nwparker/projects/mantine-react-table/packages/mantine-react-table
+> rm -rf locales && node build-locales.mjs
+
+ ELIFECYCLE  Command failed.
+ ELIFECYCLE  Command failed.
+ ELIFECYCLE  Command failed.
+ ELIFECYCLE  Command failed.
