@@ -48,23 +48,16 @@ export const MRT_TableHeadCellSortLabel = <
 
   return (
     <Tooltip withinPortal openDelay={1000} label={sortTooltip}>
-      <Indicator
-        color="transparent"
-        disabled={sorting.length < 2 || sortIndex === -1}
-        inline
-        processing
-        label={sortIndex + 1}
-        offset={3}
+      <ActionIcon
+        className={clsx('mrt-table-head-sort-button', classes['sort-icon'])}
+        aria-label={sortTooltip}
+        {...dataVariable('sorted', sorted)}
+        variant="transparent"
+        color="grey"
+        size="sm"
       >
-        <ActionIcon
-          className={clsx('mrt-table-head-sort-button', classes['sort-icon'])}
-          aria-label={sortTooltip}
-          {...dataVariable('sorted', sorted)}
-          variant="transparent"
-        >
-          {icon}
-        </ActionIcon>
-      </Indicator>
+        {icon}
+      </ActionIcon>
     </Tooltip>
   );
 };

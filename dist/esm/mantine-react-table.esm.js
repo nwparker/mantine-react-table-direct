@@ -3,7 +3,7 @@ import { useMemo, useState, memo, useEffect, useRef, Fragment as Fragment$1, use
 import { aggregationFns, filterFns, sortingFns, flexRender as flexRender$1, createRow as createRow$1, useReactTable, getCoreRowModel, getExpandedRowModel, getFacetedMinMaxValues, getFacetedRowModel, getFacetedUniqueValues, getFilteredRowModel, getGroupedRowModel, getPaginationRowModel, getSortedRowModel } from '@tanstack/react-table';
 import { rankItem, rankings, compareItems } from '@tanstack/match-sorter-utils';
 import { IconArrowAutofitContent, IconArrowsSort, IconBaselineDensityLarge, IconBaselineDensityMedium, IconBaselineDensitySmall, IconBoxMultiple, IconChevronDown, IconChevronLeft, IconChevronLeftPipe, IconChevronRight, IconChevronRightPipe, IconChevronsDown, IconCircleX, IconClearAll, IconColumns, IconDeviceFloppy, IconDots, IconDotsVertical, IconEdit, IconEyeOff, IconFilter, IconFilterCog, IconFilterOff, IconGripHorizontal, IconMaximize, IconMinimize, IconPinned, IconPinnedOff, IconSearch, IconSearchOff, IconSortAscending, IconSortDescending, IconX } from '@tabler/icons-react';
-import { Tooltip, ActionIcon, Box, Select, TextInput, CopyButton, UnstyledButton, Highlight, TableTd, Skeleton, Collapse, TableTr, TableTbody, Text, Menu, Button, Switch, Radio, Checkbox, Progress, Group, Pagination, Badge, MultiSelect, Autocomplete, CloseButton, Combobox, Flex, Alert, Stack, useMantineTheme, rem, Divider, Transition, RangeSlider, Popover, Indicator, TableThead, TableTh, TableTfoot, Table, Modal, LoadingOverlay, Paper } from '@mantine/core';
+import { Tooltip, ActionIcon, Box, Select, TextInput, CopyButton, UnstyledButton, Highlight, TableTd, Skeleton, Collapse, TableTr, TableTbody, Text, Menu, Button, Switch, Radio, Checkbox, Progress, Group, Pagination, Badge, MultiSelect, Autocomplete, CloseButton, Combobox, Flex, Alert, Stack, useMantineTheme, rem, Divider, Transition, RangeSlider, Popover, TableThead, TableTh, TableTfoot, Table, Modal, LoadingOverlay, Paper } from '@mantine/core';
 import { useVirtualizer, defaultRangeExtractor } from '@tanstack/react-virtual';
 import clsx from 'clsx';
 import { useDebouncedValue, useMediaQuery } from '@mantine/hooks';
@@ -2580,9 +2580,9 @@ var classes$9 = {"sort-icon":"MRT_TableHeadCellSortLabel-module_sort-icon__1Pgic
 const MRT_TableHeadCellSortLabel = ({ header, table: { getState, options: { icons: { IconSortDescending, IconSortAscending, IconArrowsSort }, localization, }, }, }) => {
     const column = header.column;
     const { columnDef } = column;
-    const { sorting } = getState();
+    getState();
     const sorted = column.getIsSorted();
-    const sortIndex = column.getSortIndex();
+    column.getSortIndex();
     const sortTooltip = sorted
         ? sorted === 'desc'
             ? localization.sortedByColumnDesc.replace('{column}', columnDef.header)
@@ -2591,7 +2591,7 @@ const MRT_TableHeadCellSortLabel = ({ header, table: { getState, options: { icon
             ? localization.sortByColumnDesc.replace('{column}', columnDef.header)
             : localization.sortByColumnAsc.replace('{column}', columnDef.header);
     const icon = sorted === 'desc' ? (jsx(IconSortDescending, {})) : sorted === 'asc' ? (jsx(IconSortAscending, {})) : (jsx(IconArrowsSort, {}));
-    return (jsx(Tooltip, { withinPortal: true, openDelay: 1000, label: sortTooltip, children: jsx(Indicator, { color: "transparent", disabled: sorting.length < 2 || sortIndex === -1, inline: true, processing: true, label: sortIndex + 1, offset: 3, children: jsx(ActionIcon, Object.assign({ className: clsx('mrt-table-head-sort-button', classes$9['sort-icon']), "aria-label": sortTooltip }, dataVariable('sorted', sorted), { variant: "transparent", children: icon })) }) }));
+    return (jsx(Tooltip, { withinPortal: true, openDelay: 1000, label: sortTooltip, children: jsx(ActionIcon, Object.assign({ className: clsx('mrt-table-head-sort-button', classes$9['sort-icon']), "aria-label": sortTooltip }, dataVariable('sorted', sorted), { variant: "transparent", color: "grey", size: "sm", children: icon })) }));
 };
 
 var classes$8 = {"root":"MRT_TableHeadCell-module_root__ROjYZ","root-grid":"MRT_TableHeadCell-module_root-grid__3pJe7","root-virtualized":"MRT_TableHeadCell-module_root-virtualized__9D-BH","root-no-select":"MRT_TableHeadCell-module_root-no-select__rsQ7q","root-pinned":"MRT_TableHeadCell-module_root-pinned__lXd2o","root-pinned-left":"MRT_TableHeadCell-module_root-pinned-left__Xh-TW","root-pinned-right":"MRT_TableHeadCell-module_root-pinned-right__LxQAZ","root-pinned-left-last":"MRT_TableHeadCell-module_root-pinned-left-last__w7njO","root-pinned-right-first":"MRT_TableHeadCell-module_root-pinned-right-first__M2MbN","dragging":"MRT_TableHeadCell-module_dragging__K1xxG","hovered":"MRT_TableHeadCell-module_hovered__pCA-8","content":"MRT_TableHeadCell-module_content__47O7e","content-spaced":"MRT_TableHeadCell-module_content-spaced__PhAXB","content-center":"MRT_TableHeadCell-module_content-center__m9sXp","content-right":"MRT_TableHeadCell-module_content-right__iGCoI","content-wrapper":"MRT_TableHeadCell-module_content-wrapper__k-Rjy","content-wrapper-hidden-overflow":"MRT_TableHeadCell-module_content-wrapper-hidden-overflow__y9gFN","content-wrapper-nowrap":"MRT_TableHeadCell-module_content-wrapper-nowrap__vNojJ","labels":"MRT_TableHeadCell-module_labels__LWNk7","labels-right":"MRT_TableHeadCell-module_labels-right__I2gZy","labels-center":"MRT_TableHeadCell-module_labels-center__twd-q","labels-sortable":"MRT_TableHeadCell-module_labels-sortable__YB55b","labels-data":"MRT_TableHeadCell-module_labels-data__U4Iif","content-actions":"MRT_TableHeadCell-module_content-actions__A9UQq"};

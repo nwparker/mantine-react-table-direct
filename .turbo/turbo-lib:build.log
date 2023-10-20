@@ -1,18 +1,36 @@
 
-> mantine-react-table@2.0.0-alpha.2 lib:build /Users/nwparker/projects/mantine-react-table/packages/mantine-react-table
+> mantine-react-table@2.0.0-alpha.3 lib:build /Users/nwparker/projects/mantine-react-table/packages/mantine-react-table
 > rm -rf dist && pnpm build-no-locales && pnpm build-locales
 
 
-> mantine-react-table@2.0.0-alpha.2 build-no-locales /Users/nwparker/projects/mantine-react-table/packages/mantine-react-table
+> mantine-react-table@2.0.0-alpha.3 build-no-locales /Users/nwparker/projects/mantine-react-table/packages/mantine-react-table
 > pnpm lib:build-no-locales
 
 
-> mantine-react-table@2.0.0-alpha.2 lib:build-no-locales /Users/nwparker/projects/mantine-react-table/packages/mantine-react-table
+> mantine-react-table@2.0.0-alpha.3 lib:build-no-locales /Users/nwparker/projects/mantine-react-table/packages/mantine-react-table
 > rm -rf dist && rollup -c rollup.config.mjs && size-limit
 
 [36m
 [1m./src/index.ts[22m → [1m./dist/cjs/index.js, ./dist/esm/mantine-react-table.esm.js[22m...[39m
-[32mcreated [1m./dist/cjs/index.js, ./dist/esm/mantine-react-table.esm.js[22m in [1m3.4s[22m[39m
+[1m[33m(!) Plugin typescript: @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.[39m[22m
+[1msrc/head/MRT_TableHeadCellSortLabel.tsx: (2:22)[22m
+[90m
+[7m2[0m import { ActionIcon, Indicator, Tooltip } from '@mantine/core';
+[7m [0m [91m                     ~~~~~~~~~[0m
+[39m
+[1m[33m(!) Plugin typescript: @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.[39m[22m
+[1msrc/head/MRT_TableHeadCellSortLabel.tsx: (28:9)[22m
+[90m
+[7m28[0m   const { sorting } = getState();
+[7m  [0m [91m        ~~~~~~~~~~~[0m
+[39m
+[1m[33m(!) Plugin typescript: @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.[39m[22m
+[1msrc/head/MRT_TableHeadCellSortLabel.tsx: (30:9)[22m
+[90m
+[7m30[0m   const sortIndex = column.getSortIndex();
+[7m  [0m [91m        ~~~~~~~~~[0m
+[39m
+[32mcreated [1m./dist/cjs/index.js, ./dist/esm/mantine-react-table.esm.js[22m in [1m3.5s[22m[39m
 [36m
 [1m./dist/esm/types/index.d.ts[22m → [1m./dist/index.d.ts[22m...[39m
 copied:
@@ -20,23 +38,122 @@ copied:
 Deleted files and folders: 2
 /Users/nwparker/projects/mantine-react-table/packages/mantine-react-table/dist/cjs/index.css
 /Users/nwparker/projects/mantine-react-table/packages/mantine-react-table/dist/esm/mantine-react-table.esm.css
-[32mcreated [1m./dist/index.d.ts[22m in [1m146ms[22m[39m
+[32mcreated [1m./dist/index.d.ts[22m in [1m135ms[22m[39m
 - Adding to empty esbuild project
 ✔ Adding to empty esbuild project
   
   dist/cjs/index.js
   Size limit: 58 kB
-  Size:       53.77 kB with all dependencies, minified and gzipped
+  Size:       53.73 kB with all dependencies, minified and gzipped
   
   dist/esm/mantine-react-table.esm.js
   Size limit: 56 kB
-  Size:       50.31 kB with all dependencies, minified and gzipped
+  Size:       50.26 kB with all dependencies, minified and gzipped
   
 
-> mantine-react-table@2.0.0-alpha.2 build-locales /Users/nwparker/projects/mantine-react-table/packages/mantine-react-table
+> mantine-react-table@2.0.0-alpha.3 build-locales /Users/nwparker/projects/mantine-react-table/packages/mantine-react-table
 > pnpm lib:build-locales
 
 
-> mantine-react-table@2.0.0-alpha.2 lib:build-locales /Users/nwparker/projects/mantine-react-table/packages/mantine-react-table
+> mantine-react-table@2.0.0-alpha.3 lib:build-locales /Users/nwparker/projects/mantine-react-table/packages/mantine-react-table
 > rm -rf locales && node build-locales.mjs
 
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (2:22) @rollup/plugin-typescript TS6133: 'Indicator' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (28:9) @rollup/plugin-typescript TS6133: 'sorting' is declared but its value is never read.
+(typescript plugin) src/head/MRT_TableHeadCellSortLabel.tsx (30:9) @rollup/plugin-typescript TS6133: 'sortIndex' is declared but its value is never read.
